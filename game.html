@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Eoorox - Gaming and eSports HTML Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="font-flaticon/flaticon.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/meanmenu.css"> 
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Cart & Gallery CSS fixes -->
+  <style>
+    /* Выровнять изображения в галерее */
+    figure.gallery-image img {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    /* Отступы между карточками */
+    .grid-item {
+      margin-bottom: 30px;
+    }
+
+    /* cart count badge */
+    #cart-count {
+      background: #e22;
+      color: #fff;
+      border-radius: 50%;
+      padding: 0 6px;
+      font-size: 0.75rem;
+      vertical-align: top;
+      margin-left: 4px;
+    }
+    /* modal overlay */
+    .cart-modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .cart-modal.active { display: flex; }
+    .cart-content {
+      background: #872f2f;
+      padding: 1.5rem;
+      width: 90%; max-width: 400px;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .cart-close {
+      position: absolute; top: 0.5rem; right: 0.5rem;
+      background: none; border: none;
+      font-size: 1.5rem; cursor: pointer;
+    }
+    #cart-items {
+      list-style: none;
+      max-height: 300px;
+      overflow-y: auto;
+      margin: 1rem 0; padding: 0;
+    }
+    #cart-items li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .cart-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    #checkout-btn {
+      padding: 0.5rem 1rem;
+      background: #872f2f;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /* add-to-cart button */
+    .add-to-cart {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background: #e22;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .add-to-cart:hover { background: #c11; }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <header class="header-area header-three">
+    <div id="header-sticky" class="menu-area">
+      <div class="container">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 text-right text-xl-right">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub">
+                      <a href="index.html">Home</a>
+                      <ul></ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-sub"><a href="gallery.html">Pages</a>
+                      <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="error.html">Faq</a></li>
+                        <li><a href="game.html">Game</a></li>
+
+                        <li><a href="analityv.html">Statistics </a></li>
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 text-left d-none d-lg-block mt-30 mb-30">
+              <div class="cart-top">
+                <ul>
+                  <li><a href="#" class="menu-tigger"><i class="fas fa-search"></i></a></li>
+                  <li>
+                    <a href="#" id="cart-btn">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span id="cart-count">0</span>
+                    </a>
+                  </li>
+                  <li><a href="#" class="menu-tigger"><img src="img/bg/toggle-menu.png" alt="logo"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12"><div class="mobile-menu"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <!-- offcanvas-area -->
+  <div class="offcanvas-menu">…</div>
+  <div class="offcanvas-overly"></div>
+  <!-- offcanvas-end -->
+
+  <!-- main-area -->
+  <main>
+    <!-- gallery-area -->
+    <section id="work" class="pb-90">
+      <div class="container">
+        <div class="portfolio">
+          <div class="row align-items-center mb-30">
+            <div class="col-lg-12">
+              <div class="section-title cta-title mb-35">
+                <h2>Trending <span>Games</span></h2>
+                <img src="img/bg/circle_left.png" alt="circle left"/>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="my-masonry">
+                <div class="button-group filter-button-group">
+                  <button class="active" data-filter="*">All</button>
+                  <button data-filter=".financial">Origin</button>
+                  <button data-filter=".banking">Playstation 4</button>
+                  <button data-filter=".insurance">Uplay</button>
+                  <button data-filter=".family">Steam</button>
+                  <button data-filter=".business">Reper</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid col4 d-flex flex-wrap">
+            <!-- Game 1 -->
+            <div class="grid-item col-md-3 financial">
+              <a href="дамирр/00.png" class="popup-image">
+                <figure class="gallery-image">
+                  <img src="дамирр/00.png" alt="Bunny Officer">
+                  <figcaption>
+                    <h4>Bunny Officer</h4>
+                    <p>499 $</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <button class="add-to-cart" data-name="Bunny Officer" data-price="499">В корзину</button>
+            </div>
+            <!-- Game 2 -->
+            <div class="grid-item col-md-3 financial banking">
+              <a href="дамирр/OIP (2).jpeg" class="popup-image">
+                <figure class="gallery-image">
+                  <img src="дамирр/OIP (2).jpeg" alt="Wonderland">
+                  <figcaption>
+                    <h4>Wonderland</h4>
+                    <p>599 $</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <button class="add-to-cart" data-name="Wonderland" data-price="599">В корзину</button>
+            </div>
+            <!-- Game 3 -->
+            <div class="grid-item col-md-3 insurance">
+              <a href="дамирр/OIP.jpeg" class="popup-image">
+                <figure class="gallery-image">
+                  <img src="дамирр/OIP.jpeg" alt="Apex Legends">
+                  <figcaption>
+                    <h4>Apex Legends</h4>
+                    <p>175 $</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <button class="add-to-cart" data-name="Apex Legends" data-price="0">В корзину</button>
+            </div>
+            <!-- Game 4 -->
+            <div class="grid-item col-md-3 family">
+              <a href="дамирр/000.jpg" class="popup-image">
+                <figure class="gallery-image">
+                  <img src="дамирр/000.jpg" alt="Wraith">
+                  <figcaption>
+                    <h4>Wraith</h4>
+                    <p>299 $</p>
+                  </figcaption>
+                </figure>
+              </a>
+              <button class="add-to-cart" data-name="Wraith" data-price="299">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery-area-end -->
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <button class="cart-close" id="cart-close">&times;</button>
+        <h3>Ваша корзина</h3>
+        <ul id="cart-items"></ul>
+        <div class="cart-footer">
+          <strong>Итого: <span id="cart-total">0 $</span></strong>
+          <button id="checkout-btn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+    <!-- end Cart Modal -->
+  </main>
+  <!-- main-area-end -->
+
+  <!-- footer -->
+  <footer class="footer-bg footer-p" style="background: #1e191f;">
+    <!-- ваш футер -->
+  </footer>
+  <!-- footer-end -->
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Cart JS -->
+  <script>
+    const cartBtn = document.getElementById('cart-btn');
+    const cartModal = document.getElementById('cart-modal');
+    const cartClose = document.getElementById('cart-close');
+    const cartCount = document.getElementById('cart-count');
+    const cartItemsUl = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    cartBtn.addEventListener('click', e => {
+      e.preventDefault();
+      cartModal.classList.add('active');
+      renderCart();
+    });
+    cartClose.addEventListener('click', () => cartModal.classList.remove('active'));
+
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.dataset.name;
+        const price = parseInt(btn.dataset.price, 10);
+        const existing = cart.find(i => i.name === name);
+        if (existing) existing.qty++;
+        else cart.push({ name, price, qty: 1 });
+        saveCart();
+        updateCount();
+      });
+    });
+
+    function renderCart() {
+      cartItemsUl.innerHTML = '';
+      let total = 0;
+      cart.forEach((item, idx) => {
+        total += item.price * item.qty;
+        const li = document.createElement('li');
+        li.innerHTML = `
+          ${item.name} x${item.qty}
+          <span>${item.price * item.qty} ₽</span>
+          <button data-index="${idx}" class="remove-item">&times;</button>
+        `;
+        cartItemsUl.appendChild(li);
+      });
+      cartTotal.textContent = total + ' ₽';
+      document.querySelectorAll('.remove-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          cart.splice(btn.dataset.index, 1);
+          saveCart();
+          renderCart();
+          updateCount();
+        });
+      });
+    }
+
+    function saveCart() {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    function updateCount() {
+      const sum = cart.reduce((s, i) => s + i.qty, 0);
+      cartCount.textContent = sum;
+    }
+
+    updateCount();
+  </script>
+  <!-- end Cart JS -->
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Eoorox - Gaming and eSports HTML Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="font-flaticon/flaticon.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Theme switcher & custom styles -->
+  <style>
+    :root {
+      --bg-color: #fff;
+      --text-color: #111;
+      --header-bg: #f8f9fa;
+      --footer-bg: #1e191f;
+    }
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background .3s, color .3s;
+    }
+    .header-area {
+      background: var(--header-bg);
+      transition: background .3s;
+    }
+    .footer-bg {
+      background: var(--footer-bg) !important;
+    }
+    body.dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #ddd;
+      --header-bg: #111;
+    }
+    #theme-toggle {
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 0.25rem;
+      margin-left: 0.5rem;
+    }
+    #theme-toggle:focus { outline: none; }
+
+    /* Отступ сверху для основного контента, чтобы не было под хедером */
+    main {
+      margin-top: 10rem; /* скорректируйте под фактическую высоту хедера */
+    }
+
+    /* Красивая таблица */
+    .beautiful-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .beautiful-table thead th {
+      background: var(--header-bg);
+      color: var(--text-color);
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .beautiful-table tbody td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .beautiful-table tbody tr:hover {
+      background: #f1f1f1;
+    }
+
+    /* Список с художественными маркерами */
+    .fancy-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 2rem 0;
+    }
+    .fancy-list li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+    .fancy-list li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--header-bg);
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <header class="header-area header-three fixed top-0 w-full z-50">
+    <div id="header-sticky" class="menu-area">
+      <div class="container">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 text-right text-xl-right">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub">
+                      <a href="index.html">Home</a>
+                      <ul>
+                      
+                      </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-sub"><a href="gallery.html">Pages</a>
+                      <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="game.html">Game</a></li>
+                        <li><a href="analityv.html">Statistics </a></li>
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 text-left d-none d-lg-block mt-30 mb-30">
+              <div class="cart-top">
+                <ul class="d-flex align-items-center mb-0">
+                  <li class="me-2">
+                    <a href="#" class="menu-tigger"><i class="fas fa-search"></i></a>
+                  </li>
+                  <li class="me-2">
+                    <a href="#" class="menu-tigger"><img src="img/bg/toggle-menu.png" alt="logo"></a>
+                  </li>
+                  <li>
+                    <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                      <i class="fas fa-moon"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mobile-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <div class="offcanvas-menu">
+    <span class="menu-close"><i class="fas fa-times"></i></span>
+  <form role="search" method="get" id="searchform"   class="searchform" action="http://wordpress.zcube.in/xconsulta/">
+                    <input type="text" name="s" id="search" value="" placeholder="Search"  />
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+
+        
+        <div id="cssmenu3" class="menu-one-page-menu-container">
+            <ul id="menu-one-page-menu-2" class="menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.html">Home</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="about.html">About Us</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="services.html">Services</a></li>
+                 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="pricing.html">Pricing </a></li>
+                 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="team.html">Team </a></li>
+                 
+                 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="projects.html">Gallery Study</a></li>
+                 <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog.html">Blog</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>  
+        
+        <div id="cssmenu2" class="menu-one-page-menu-container">
+            <ul id="menu-one-page-menu-1" class="menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+8 12 3456897</span></a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>info@example.com</span></a></li>
+            </ul>
+        </div>                
+</div>
+<div class="offcanvas-overly"></div>
+  <!-- offcanvas-end -->
+
+  <!-- main-area -->
+  <main class="container mb-5">
+    <section id="dynamic-content">
+      <h2>Таблица результатов</h2>
+      <table class="beautiful-table" id="data-table"></table>
+
+      <h2>Список событий</h2>
+      <ul class="fancy-list" id="fancy-list"></ul>
+
+      <h2>Тематический график</h2>
+      <canvas id="themeChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+  <!-- main-area-end -->
+
+  <!-- footer -->
+  <footer class="footer-bg footer-p" style="background: #1e191f;">
+    <div class="footer-top pt-70">
+       <div class="container">
+           <div class="row justify-content-between">
+               
+                 <div class="col-xl-4 col-lg-4 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title mb-20">
+                          <img src="img/logo/f_logo.png" alt="img">
+                       </div>
+                       <div class="footer-link">
+                       Assassin’s Creed
+                       </div>
+                       <div class="f-contact mt-20">
+                           <ul>
+                               <li>
+                             <i class="icon fal fa-map-marker-alt"></i>
+                                <span>Address :1 Broklyn Street,  Petropavl</span>
+                           </li>
+                           <li>
+                               <i class="icon far fa-clock"></i>
+                               <span>Phone : +777777777 </span>
+                           </li>
+                           <li>
+                               <i class="icon dripicons-mail"></i>
+                                <span>Email : <a href="mailto:info@example.com">info@ku.edu.kz</a></span>
+                           </li>
+                           
+                       </ul>
+                           
+                           </div>
+                      
+                   </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Our Links</h2>
+                       </div>
+                       <div class="footer-link">
+                           <ul>                                        
+                               <li><a href="index.html">Home</a></li>
+                               <li><a href="about.html"> About Us</a></li>
+                               <li><a href="services.html"> Services </a></li>
+                               <li><a href="contact.html"> Contact Us</a></li>
+                               <li><a href="blog.html">Blog </a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Our Services</h2>
+                       </div>
+                       <div class="footer-link">
+                           <ul>
+                               <li><a href="error.html">FAQ</a></li>
+                               <li><a href="#">Support</a></li>
+                               <li><a href="#">Privercy</a></li>
+                               <li><a href="#">Term & Conditions</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>  
+              <div class="col-xl-3 col-lg-3 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Our Gallery</h2>
+                       </div>
+                       <div class="footer-social  mt-30">                                    
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                       </div>
+                     
+                   </div>
+                  <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Map</h2>
+                       </div>
+                       <div class="map-f">                                    
+                            <img src="img/bg/map.png" alt="img">
+                       </div>
+                     
+                   </div>
+               </div>  
+             
+               
+           </div>
+       </div>
+   </div>
+   <div class="copyright-wrap">
+       <div class="container">
+           <div class="row align-items-center">
+               <div class="col-lg-6">                         
+                    Assassin’s © 2025
+               </div>
+               <div class="col-lg-6 text-right text-xl-right">                       
+                          
+               </div>
+               
+           </div>
+       </div>
+   </div>
+</footer>
+<!-- footer-end -->
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    (function(){
+      const btn  = document.getElementById('theme-toggle');
+      const icon = btn.querySelector('i');
+      const body = document.body;
+      const dark = localStorage.getItem('dark-mode') === 'true';
+      if (dark) {
+        body.classList.add('dark-mode');
+        icon.classList.replace('fa-moon','fa-sun');
+      }
+      btn.addEventListener('click', () => {
+        const enabled = body.classList.toggle('dark-mode');
+        localStorage.setItem('dark-mode', enabled);
+        icon.classList.toggle('fa-moon');
+        icon.classList.toggle('fa-sun');
+      });
+    })();
+  </script>
+
+  <!-- Динамическое наполнение и обновлённая тема диаграммы -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Данные
+      const tableData = [
+        { name: 'Игрок 1', score: 95 },
+        { name: 'Игрок 2', score: 88 },
+        { name: 'Игрок 3', score: 76 },
+        { name: 'Игрок 4', score: 82 }
+      ];
+
+      // Таблица
+      const table = document.getElementById('data-table');
+      const thead = table.createTHead();
+      const headerRow = thead.insertRow();
+      ['Имя', 'Счет'].forEach(text => {
+        const th = document.createElement('th');
+        th.textContent = text;
+        headerRow.appendChild(th);
+      });
+      const tbody = table.createTBody();
+      tableData.forEach(item => {
+        const row = tbody.insertRow();
+        Object.values(item).forEach(val => {
+          const cell = row.insertCell();
+          cell.textContent = val;
+        });
+      });
+
+      // Список
+      const listData = ['Запуск турнира', 'Открытие стрима', 'Финальный матч', 'Объявление победителей'];
+      const list = document.getElementById('fancy-list');
+      listData.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        list.appendChild(li);
+      });
+
+      // Градиент для баров (зелёно-голубая тема)
+      const ctx = document.getElementById('themeChart').getContext('2d');
+      const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+      gradient.addColorStop(0, '#20c997');
+      gradient.addColorStop(1, '#0dcaf0');
+
+      // Построение диаграммы
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: tableData.map(d => d.name),
+          datasets: [{
+            label: 'Результаты',
+            data: tableData.map(d => d.score),
+            backgroundColor: gradient,
+            borderColor: '#198754',
+            borderWidth: 2,
+            borderRadius: 8,
+            maxBarThickness: 50
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            title: {
+              display: true,
+              text: 'Игровая статистика',
+              font: { size: 22, weight: 'bold' },
+              padding: { bottom: 20 }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(0,0,0,0.7)',
+              titleFont: { size: 14, weight: '600' },
+              bodyFont: { size: 12 }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: { color: 'var(--text-color)', font: { size: 14 } }
+            },
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'var(--text-color)',
+                borderDash: [4, 4]
+              },
+              ticks: { color: 'var(--text-color)', font: { size: 14 } }
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

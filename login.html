@@ -1,0 +1,380 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Eoorox - Gaming and eSports HTML Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="font-flaticon/flaticon.css">
+  <link rel="stylesheet" href="css/dripicons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  .auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .auth-box {
+    background: #262626;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 420px;
+    width: 100%;
+  }
+  
+  .auth-box h2 {
+    color: #ff3c78;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .auth-box input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .auth-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3c78;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+  
+  .auth-box button:hover {
+    background-color: #e3326d;
+  }
+  
+  .auth-box .switch-link {
+    text-align: center;
+    margin-top: 16px;
+    color: #aaa;
+  }
+  
+  .auth-box .switch-link a {
+    color: #ff3c78;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <!-- header -->
+  <header class="header-area header-three fixed top-0 w-full z-50">
+    <div id="header-sticky" class="menu-area">
+      <div class="container">
+        <div class="second-menu">
+          <div class="row align-items-center">
+            <!-- logo -->
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo">
+                <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+              </div>
+            </div>
+            <!-- nav -->
+            <div class="col-xl-8 col-lg-8 text-right text-xl-right">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-sub"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-sub"><a href="gallery.html">Pages</a>
+                      <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="game.html">Game</a></li>
+                        <li><a href="analityv.html">Statistics</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- icons -->
+            <div class="col-xl-2 col-lg-2 text-left d-none d-lg-block mt-30 mb-30">
+              <div class="cart-top">
+                <ul class="d-flex align-items-center mb-0">
+                  <li class="me-2"><a href="#" class="menu-tigger"><i class="fas fa-search"></i></a></li>
+                  <li class="me-2"><a href="#" class="menu-tigger"><img src="img/bg/toggle-menu.png" alt="logo"></a></li>
+                  <li class="me-2"><button id="theme-toggle" aria-label="Toggle dark/light mode"><i class="fas fa-moon"></i></button></li>
+                  <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12"><div class="mobile-menu"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header-end -->
+
+  <!-- offcanvas-area -->
+  <div class="offcanvas-menu">
+    <span class="menu-close"><i class="fas fa-times"></i></span>
+    <form role="search" id="searchform" class="searchform" action="#">
+      <input type="text" name="s" id="search" placeholder="Search" />
+      <button><i class="fa fa-search"></i></button>
+    </form>
+    <div id="cssmenu3" class="menu-one-page-menu-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="projects.html">Gallery Study</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div id="cssmenu2" class="menu-one-page-menu-container">
+      <ul>
+        <li><a href="#home"><span>+8 12 3456897</span></a></li>
+        <li><a href="#howitwork"><span>info@example.com</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="offcanvas-overly"></div>
+  <!-- offcanvas-end -->
+
+  <main class="login-section" style="min-height: 100vh; display: flex; justify-content: center; align-items: center; padding-top: 80px; background: #1f1f1f;">
+    <div id="auth-box" style="background:#262626; padding:40px; border-radius:12px; width:100%; max-width:400px; box-shadow:0 10px 25px rgba(0,0,0,0.4);">
+      <h2 style="text-align:center; color:#ff3c78; font-weight:800; margin-bottom:20px;" id="form-title">LOGIN</h2>
+      
+      <form id="login-form">
+        <input type="email" placeholder="Email" style="width:100%; padding:12px; margin-bottom:12px; background:#111; border:1px solid #444; color:#fff; border-radius:4px;">
+        <input type="password" placeholder="Password" style="width:100%; padding:12px; margin-bottom:12px; background:#111; border:1px solid #444; color:#fff; border-radius:4px;">
+        <button type="submit" style="width:100%; padding:12px; background:#ff3c78; border:none; color:white; font-weight:bold; border-radius:4px;">Login</button>
+      </form>
+  
+      <form id="register-form" style="display:none;">
+        <input type="text" placeholder="Full Name" style="width:100%; padding:12px; margin-bottom:12px; background:#111; border:1px solid #444; color:#fff; border-radius:4px;">
+        <input type="email" placeholder="Email" style="width:100%; padding:12px; margin-bottom:12px; background:#111; border:1px solid #444; color:#fff; border-radius:4px;">
+        <input type="password" placeholder="Password" style="width:100%; padding:12px; margin-bottom:12px; background:#111; border:1px solid #444; color:#fff; border-radius:4px;">
+        <button type="submit" style="width:100%; padding:12px; background:#ff3c78; border:none; color:white; font-weight:bold; border-radius:4px;">Register</button>
+      </form>
+  
+      <div style="text-align:center; margin-top:12px; color:#ccc;">
+        <span id="toggle-text">Don't have an account?</span>
+        <a href="#" onclick="toggleForm()" style="color:#ff3c78; font-weight:700;"> Register</a>
+      </div>
+    </div>
+  </main>
+<!-- footer -->
+<footer class="footer-bg footer-p" style="background: #1e191f;">
+    <div class="footer-top pt-70">
+       <div class="container">
+           <div class="row justify-content-between">
+               
+                 <div class="col-xl-4 col-lg-4 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title mb-20">
+                          <img src="img/logo/f_logo.png" alt="img">
+                       </div>
+                       <div class="footer-link">
+                       Assassin’s Creed
+                       </div>
+                       <div class="f-contact mt-20">
+                           <ul>
+                               <li>
+                             <i class="icon fal fa-map-marker-alt"></i>
+                                <span>Address :1 Broklyn Street,  Petropavl</span>
+                           </li>
+                           <li>
+                               <i class="icon far fa-clock"></i>
+                               <span>Phone : +777777777 </span>
+                           </li>
+                           <li>
+                               <i class="icon dripicons-mail"></i>
+                                <span>Email : <a href="mailto:info@example.com">info@ku.edu.kz</a></span>
+                           </li>
+                           
+                       </ul>
+                           
+                           </div>
+                      
+                   </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Our Links</h2>
+                       </div>
+                       <div class="footer-link">
+                           <ul>                                        
+                               <li><a href="index.html">Home</a></li>
+                               <li><a href="about.html"> About Us</a></li>
+                               <li><a href="services.html"> Services </a></li>
+                               <li><a href="contact.html"> Contact Us</a></li>
+                               <li><a href="blog.html">Blog </a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Our Services</h2>
+                       </div>
+                       <div class="footer-link">
+                           <ul>
+                               <li><a href="error.html">FAQ</a></li>
+                               <li><a href="#">Support</a></li>
+                               <li><a href="#">Privercy</a></li>
+                               <li><a href="#">Term & Conditions</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>  
+              <div class="col-xl-3 col-lg-3 col-sm-6">
+                   <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Our Gallery</h2>
+                       </div>
+                       <div class="footer-social  mt-30">                                    
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                       </div>
+                     
+                   </div>
+                  <div class="footer-widget mb-30">
+                       <div class="f-widget-title">
+                           <h2>Map</h2>
+                       </div>
+                       <div class="map-f">                                    
+                            <img src="img/bg/map.png" alt="img">
+                       </div>
+                     
+                   </div>
+               </div>  
+             
+               
+           </div>
+       </div>
+   </div>
+   <div class="copyright-wrap">
+       <div class="container">
+           <div class="row align-items-center">
+               <div class="col-lg-6">                         
+                    Assassin’s © 2025
+               </div>
+               <div class="col-lg-6 text-right text-xl-right">                       
+                          
+               </div>
+               
+           </div>
+       </div>
+   </div>
+</footer>
+<!-- footer-end -->
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/paroller.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/js_isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/parallax-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/element-in-view.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    // theme toggle
+    (function(){
+      const btn  = document.getElementById('theme-toggle'),
+            icon = btn.querySelector('i'),
+            body = document.body,
+            dark = localStorage.getItem('dark-mode')==='true';
+      if(dark){ body.classList.add('dark-mode'); icon.classList.replace('fa-moon','fa-sun'); }
+      btn.addEventListener('click',()=>{
+        const en = body.classList.toggle('dark-mode');
+        localStorage.setItem('dark-mode',en);
+        icon.classList.toggle('fa-moon');
+        icon.classList.toggle('fa-sun');
+      });
+    })();
+
+    // auth forms
+    document.getElementById('loginForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      alert('Logged in as: '+document.getElementById('loginEmail').value);
+      bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+    });
+    document.getElementById('registerForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const pw=document.getElementById('regPassword').value,
+            cp=document.getElementById('regConfirm').value;
+      if(pw!==cp) return alert('Passwords do not match');
+      alert('Registered: '+document.getElementById('regEmail').value);
+      bootstrap.Modal.getInstance(document.getElementById('registerModal')).hide();
+    });
+    function toggleForm() {
+    const login = document.getElementById("login-form");
+    const register = document.getElementById("register-form");
+    const title = document.getElementById("form-title");
+    const text = document.getElementById("toggle-text");
+
+    const isLogin = login.style.display !== "none";
+
+    login.style.display = isLogin ? "none" : "block";
+    register.style.display = isLogin ? "block" : "none";
+    title.textContent = isLogin ? "REGISTER" : "LOGIN";
+    text.textContent = isLogin ? "Already have an account?" : "Don't have an account?";
+  }
+
+// dynamic-content initialization...
+  </script>
+</body>
+</html>
